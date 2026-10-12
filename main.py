@@ -267,3 +267,9 @@ async def javascript():
     return FileResponse(ROOT / 'app.js', media_type='text/javascript')  
   
  
+  
+# Public logo asset only; existing API handlers and Gemini settings are untouched.  
+@app.get('/images/ide-logo.jpg', include_in_schema=False)  
+async def ide_logo():  
+    return FileResponse(ROOT / 'images' / 'ide-logo.jpg', media_type='image/jpeg')  
+ 

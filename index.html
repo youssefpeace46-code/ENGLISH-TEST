@@ -1,76 +1,76 @@
-<!DOCTYPE html> 
-<html lang='en'> 
-<head> 
-<meta charset='UTF-8'> 
-<meta name='viewport' content='width=device-width, initial-scale=1'> 
-<title>English Practice | IDE</title> 
-<link rel='stylesheet' href='styles.css'> 
-<script src='app.js' defer></script> 
-</head> 
-<body> 
-<header><div class='header-inner'><div class='brand'> 
-<!-- Replace the IDE span with an img element using src='logo.png' and alt='IDE' when available. --> 
-<span class='logo'>IDE</span><span class='brand-name'>English Practice</span></div><span aria-label='Language: English'>EN</span></div></header> 
-<main> 
-<div id='start-screen'> 
-<div class='hero'><h1>English Practice</h1><p class='subtitle'>Improve your English by writing.</p><p class='support'>Choose your level and a topic to start your test.</p></div> 
-<form id='practice-form'> 
-<section aria-labelledby='level-heading'><h2 id='level-heading'><span>1.</span> Choose your level</h2><div class='levels' role='group' aria-labelledby='level-heading'> 
-<button type='button' class='card level' data-level='beginner' aria-pressed='false'><span class='title'>Beginner</span><span class='detail'>A1 &ndash; A2</span><span class='check' aria-hidden='true'>&#10003;</span></button> 
-<button type='button' class='card level' data-level='intermediate' aria-pressed='false'><span class='title'>Intermediate</span><span class='detail'>B1 &ndash; B2</span><span class='check' aria-hidden='true'>&#10003;</span></button> 
-<button type='button' class='card level' data-level='advanced' aria-pressed='false'><span class='title'>Advanced</span><span class='detail'>C1 &ndash; C2</span><span class='check' aria-hidden='true'>&#10003;</span></button> 
-</div></section> 
-<section aria-labelledby='topic-heading'><h2 id='topic-heading'><span>2.</span> Choose a topic</h2><div class='topics' role='group' aria-labelledby='topic-heading'> 
-<button type='button' class='card topic' data-topic='sports' aria-pressed='false'><span class='icon' aria-hidden='true'>&#9917;</span><span class='title'>Sports</span><span class='check' aria-hidden='true'>&#10003;</span></button> 
-<button type='button' class='card topic' data-topic='cooking' aria-pressed='false'><span class='icon' aria-hidden='true'>&#127859;</span><span class='title'>Cooking</span><span class='check' aria-hidden='true'>&#10003;</span></button> 
-<button type='button' class='card topic' data-topic='movies' aria-pressed='false'><span class='icon' aria-hidden='true'>&#127916;</span><span class='title'>Movies</span><span class='check' aria-hidden='true'>&#10003;</span></button> 
-<button type='button' class='card topic' data-topic='school' aria-pressed='false'><span class='icon' aria-hidden='true'>&#128218;</span><span class='title'>School</span><span class='check' aria-hidden='true'>&#10003;</span></button> 
-<button type='button' class='card topic' data-topic='travel' aria-pressed='false'><span class='icon' aria-hidden='true'>&#9992;</span><span class='title'>Travel</span><span class='check' aria-hidden='true'>&#10003;</span></button> 
-<button type='button' class='card topic' data-topic='work' aria-pressed='false'><span class='icon' aria-hidden='true'>&#128188;</span><span class='title'>Work</span><span class='check' aria-hidden='true'>&#10003;</span></button> 
-<button type='button' class='card topic' data-topic='daily-life' aria-pressed='false'><span class='icon' aria-hidden='true'>&#127968;</span><span class='title'>Daily Life</span><span class='check' aria-hidden='true'>&#10003;</span></button> 
-<button type='button' class='card topic' data-topic='random-mix' aria-pressed='false'><span class='icon' aria-hidden='true'>&#127922;</span><span class='title'>Random Mix</span><span class='check' aria-hidden='true'>&#10003;</span></button> 
-</div></section> 
-<div class='start-area'><button id='start-test' type='submit' disabled>Start Test <span aria-hidden='true'>&rarr;</span></button><p id='status' role='status' aria-live='polite'>Select a level and a topic to continue.</p></div> 
-</form> 
+<!DOCTYPE html>  
+<html lang='en'>  
+<head>  
+<meta charset='UTF-8'>  
+<meta name='viewport' content='width=device-width, initial-scale=1'>  
+<title>English Practice | IDE</title>  
+<link rel='stylesheet' href='styles.css'>  
+<script src='app.js' defer></script>  
+</head>  
+<body>  
+<header><div class='header-inner'><div class='brand'>  
+<button id='logo-home' class='logo-home' type='button' aria-label='IDE - return home and reset test'><img class='logo' src='images/ide-logo.jpg' alt='IDE'></button><span class='brand-name'>English Practice</span></div><span aria-label='Language: English'>EN</span></div></header>  
+<main>  
+<div id='start-screen'>  
+<div class='hero'><h1>English Practice</h1><p class='subtitle'>Improve your English by writing.</p><p class='support'>Choose your level and a topic to start your test.</p></div>  
+<form id='practice-form'>  
+<section aria-labelledby='level-heading'><h2 id='level-heading'><span>1.</span> Choose your level</h2><div class='levels' role='group' aria-labelledby='level-heading'>  
+<button type='button' class='card level' data-level='beginner' aria-pressed='false'><span class='title'>Beginner</span><span class='detail'>A1 &ndash; A2</span><span class='check' aria-hidden='true'>&#10003;</span></button>  
+<button type='button' class='card level' data-level='intermediate' aria-pressed='false'><span class='title'>Intermediate</span><span class='detail'>B1 &ndash; B2</span><span class='check' aria-hidden='true'>&#10003;</span></button>  
+<button type='button' class='card level' data-level='advanced' aria-pressed='false'><span class='title'>Advanced</span><span class='detail'>C1 &ndash; C2</span><span class='check' aria-hidden='true'>&#10003;</span></button>  
+</div></section>  
+<section aria-labelledby='topic-heading'><h2 id='topic-heading'><span>2.</span> Choose a topic</h2><div class='topics' role='group' aria-labelledby='topic-heading'>  
+<button type='button' class='card topic' data-topic='sports' aria-pressed='false'><span class='icon' aria-hidden='true'>&#9917;</span><span class='title'>Sports</span><span class='check' aria-hidden='true'>&#10003;</span></button>  
+<button type='button' class='card topic' data-topic='cooking' aria-pressed='false'><span class='icon' aria-hidden='true'>&#127859;</span><span class='title'>Cooking</span><span class='check' aria-hidden='true'>&#10003;</span></button>  
+<button type='button' class='card topic' data-topic='movies' aria-pressed='false'><span class='icon' aria-hidden='true'>&#127916;</span><span class='title'>Movies</span><span class='check' aria-hidden='true'>&#10003;</span></button>  
+<button type='button' class='card topic' data-topic='school' aria-pressed='false'><span class='icon' aria-hidden='true'>&#128218;</span><span class='title'>School</span><span class='check' aria-hidden='true'>&#10003;</span></button>  
+<button type='button' class='card topic' data-topic='travel' aria-pressed='false'><span class='icon' aria-hidden='true'>&#9992;</span><span class='title'>Travel</span><span class='check' aria-hidden='true'>&#10003;</span></button>  
+<button type='button' class='card topic' data-topic='work' aria-pressed='false'><span class='icon' aria-hidden='true'>&#128188;</span><span class='title'>Work</span><span class='check' aria-hidden='true'>&#10003;</span></button>  
+<button type='button' class='card topic' data-topic='daily-life' aria-pressed='false'><span class='icon' aria-hidden='true'>&#127968;</span><span class='title'>Daily Life</span><span class='check' aria-hidden='true'>&#10003;</span></button>  
+<button type='button' class='card topic' data-topic='random-mix' aria-pressed='false'><span class='icon' aria-hidden='true'>&#127922;</span><span class='title'>Random Mix</span><span class='check' aria-hidden='true'>&#10003;</span></button>  
+</div></section>  
+<div class='start-area'><button id='start-test' type='submit' disabled>Start Test <span aria-hidden='true'>&rarr;</span></button><p id='status' role='status' aria-live='polite'>Select a level and a topic to continue.</p></div>  
+</form>  
+</div>  
+<section id='test-screen' hidden aria-labelledby='question-heading'>  
+<div class='question-navigation' role='group' aria-label='Question navigation'>  
+<button id='question-back' class='navigation-button' type='button'>&larr; Back</button>  
+<button id='question-forward' class='navigation-button' type='button' disabled>&rarr; Forward</button>  
 </div> 
-<section id='test-screen' hidden aria-labelledby='question-heading'> 
-<div class='question-navigation' role='group' aria-label='Question navigation'> 
-<button id='question-back' class='navigation-button' type='button'>&larr; Back</button> 
-<button id='question-forward' class='navigation-button' type='button' disabled>&rarr; Forward</button> 
-</div>
-<div class='test-top'><h2 id='question-heading'>Question 1 of 10</h2><p id='test-topic' class='topic-badge'></p></div> 
-<progress id='test-progress' max='10' value='0' aria-label='Test progress'></progress> 
-<div class='question-card'> 
-<p class='instruction'>Complete the sentence:</p> 
-<img id='question-image' class='question-image' hidden alt='Image for this question'> 
-<p id='sentence' class='sentence'></p> 
-<div class='help-actions' role='group' aria-label='Audio hints'> 
-<button class='navigation-button' type='button' data-help='en'>&#128266; English Help</button> 
-<button class='navigation-button' type='button' data-help='ar' lang='ar' dir='rtl'>&#128266; &#1605;&#1587;&#1575;&#1593;&#1583;&#1577; &#1576;&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;</button> 
-</div> 
-<p id='help-status' role='status' aria-live='polite'></p> 
-<form id='answer-form'> 
-<label for='answer' class='answer-label'>Your answer</label> 
-<input id='answer' name='answer' type='text' placeholder='Type your answer...' required autocomplete='off' autocapitalize='off' spellcheck='false' aria-describedby='sentence'> 
-<div id='feedback' class='feedback' role='status' aria-live='polite' hidden></div> 
-<button id='answer-button' class='primary-button' type='submit'>Check Answer</button> 
-</form> 
-</div> 
-</section> 
-<section id='results-screen' class='question-card results' hidden aria-labelledby='results-heading'> 
-<h1 id='results-heading' tabindex='-1'>Test Completed!</h1> 
-<p class='instruction'>Score:</p><p id='score' class='score'></p><p id='percentage' class='percentage'></p> 
-<p id='correct-count'></p><p id='incorrect-count'></p> 
-<p id='generation-status' role='status' aria-live='polite'></p> 
-<div class='result-actions'><button id='try-again' type='button' class='primary-button'>Try Again</button><button id='review-button' type='button' class='primary-button'>Review Your Answers</button><button type='button' class='secondary-button' data-restart>Try Another Test</button></div> 
-</section> 
-<section id='review-screen' hidden aria-labelledby='review-heading'> 
-<h1 id='review-heading' tabindex='-1'>Review Your Answers</h1> 
-<ol id='review-list'></ol> 
-<button type='button' class='primary-button' data-restart>Try Another Test</button> 
-</section> 
-</main> 
-</body> 
-</html> 
+<div class='test-top'><h2 id='question-heading'>Question 1 of 10</h2><p id='test-topic' class='topic-badge'></p></div>  
+<progress id='test-progress' max='10' value='0' aria-label='Test progress'></progress>  
+<div class='question-card'>  
+<p class='instruction'>Complete the sentence:</p>  
+<img id='question-image' class='question-image' hidden alt='Image for this question'>  
+<p id='sentence' class='sentence'></p>  
+<div class='help-actions' role='group' aria-label='Audio hints'>  
+<button class='navigation-button' type='button' data-help='en'>&#128266; English Help</button>  
+<button class='navigation-button' type='button' data-help='ar' lang='ar' dir='rtl'>&#128266; &#1605;&#1587;&#1575;&#1593;&#1583;&#1577; &#1576;&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;</button>  
+</div>  
+<p id='help-status' role='status' aria-live='polite'></p>  
+<form id='answer-form'>  
+<label for='answer' class='answer-label'>Your answer</label>  
+<input id='answer' name='answer' type='text' placeholder='Type your answer...' required autocomplete='off' autocapitalize='off' spellcheck='false' aria-describedby='sentence'>  
+<div id='feedback' class='feedback' role='status' aria-live='polite' hidden></div>  
+<button id='answer-button' class='primary-button' type='submit'>Check Answer</button>  
+</form>  
+</div>  
+</section>  
+<section id='results-screen' class='question-card results' hidden aria-labelledby='results-heading'>  
+<h1 id='results-heading' tabindex='-1'>Test Completed!</h1>  
+<p class='instruction'>Score:</p><p id='score' class='score'></p><p id='percentage' class='percentage'></p>  
+<p id='correct-count'></p><p id='incorrect-count'></p>  
+<p id='generation-status' role='status' aria-live='polite'></p>  
+<div class='result-actions'><button id='try-again' type='button' class='primary-button'>Try Again</button><button id='review-button' type='button' class='primary-button'>Review Your Answers</button><button type='button' class='secondary-button' data-restart>Try Another Test</button></div>  
+</section>  
+<section id='review-screen' hidden aria-labelledby='review-heading'>  
+<h1 id='review-heading' tabindex='-1'>Review Your Answers</h1>  
+<ol id='review-list'></ol>  
+<button type='button' class='primary-button' data-restart>Try Another Test</button>  
+</section>  
+</main>  
+</body>  
+</html>  
+  
+  
  
-
